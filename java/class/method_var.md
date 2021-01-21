@@ -30,20 +30,20 @@ stack=2, locals=4, args_size=1
 ```
 地址0到8的指令将执行以下操作：
 `iconst_1`：将整数常量1压入操作数堆栈。
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608797938689-3753d7c8-a5a5-40e9-b07c-2733f8db3376.png#align=left&display=inline&height=162&margin=%5Bobject%20Object%5D&originHeight=162&originWidth=389&size=0&status=done&style=none&width=389)
+![](http://cdn.jdfrozen.cn/1608797938689-3753d7c8-a5a5-40e9-b07c-2733f8db3376.png)
 `istore_1`：弹出顶部操作数（一个int值），并将其存储在与变量对应的索引1的局部变量中`a`。
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608797938670-a8705132-7680-402e-bc0e-4fc5553fae27.png#align=left&display=inline&height=162&margin=%5Bobject%20Object%5D&originHeight=162&originWidth=685&size=0&status=done&style=none&width=685)
+![](http://cdn.jdfrozen.cn/1608797938670-a8705132-7680-402e-bc0e-4fc5553fae27.png)
 `iconst_2`：将整数常量2压入操作数堆栈。
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608797938658-04f74085-0308-449f-8958-579f3d5521ac.png#align=left&display=inline&height=162&margin=%5Bobject%20Object%5D&originHeight=162&originWidth=389&size=0&status=done&style=none&width=389)
+![](http://cdn.jdfrozen.cn/1608797938658-04f74085-0308-449f-8958-579f3d5521ac.png)
 `istore_2`：弹出顶部操作数int值，并将其存储在索引为2的局部变量中，该变量对应于variable `b`。
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608797938665-0fe2f6ac-9844-42a0-86cb-cca3bc892c6f.png#align=left&display=inline&height=162&margin=%5Bobject%20Object%5D&originHeight=162&originWidth=705&size=0&status=done&style=none&width=705)
+![](http://cdn.jdfrozen.cn/1608797938665-0fe2f6ac-9844-42a0-86cb-cca3bc892c6f.png)
 `iload_1`：从局部变量的索引1处加载int值，并将其压入操作数堆栈。
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608797938659-818ef826-8bf7-4bd7-9717-58deac21728d.png#align=left&display=inline&height=226&margin=%5Bobject%20Object%5D&originHeight=226&originWidth=708&size=0&status=done&style=none&width=708)
+![](http://cdn.jdfrozen.cn/1608797938659-818ef826-8bf7-4bd7-9717-58deac21728d.png)
 `iload_2`：从局部变量的索引1处加载int值，并将其压入操作数堆栈。
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608797938577-867c6080-16d8-4661-b0cf-68dbde2e5469.png#align=left&display=inline&height=226&margin=%5Bobject%20Object%5D&originHeight=226&originWidth=708&size=0&status=done&style=none&width=708)
+![](http://cdn.jdfrozen.cn/1608797938577-867c6080-16d8-4661-b0cf-68dbde2e5469.png)
 `iadd`：从操作数堆栈中弹出前两个int值，将它们相加，然后将结果推回到操作数堆栈中。
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608797938627-c9d284f6-d4ed-453f-8eec-62913f37458c.png#align=left&display=inline&height=162&margin=%5Bobject%20Object%5D&originHeight=162&originWidth=708&size=0&status=done&style=none&width=708)
+![](http://cdn.jdfrozen.cn/1608797938627-c9d284f6-d4ed-453f-8eec-62913f37458c.png)
 `istore_3`：弹出顶部操作数int值，并将其存储在索引为3的局部变量中，该变量对应于variable `c`。
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608797938644-553a5e41-4e50-4986-82a1-5098c1630f78.png#align=left&display=inline&height=162&margin=%5Bobject%20Object%5D&originHeight=162&originWidth=674&size=0&status=done&style=none&width=674)
+![](http://cdn.jdfrozen.cn/1608797938644-553a5e41-4e50-4986-82a1-5098c1630f78.png)
 `return`：从void方法返回。
 上面的每条指令仅由一个操作码组成，该操作码精确指示了JVM要执行的操作。

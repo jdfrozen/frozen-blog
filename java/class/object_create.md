@@ -53,11 +53,11 @@ iconst_1：压入常量1入（main栈）
 invokespecial： 调用了构造方法用一个引用point和1，1，（main栈）结果为： point
 astore_1：弹出point，放入本地变量a1
 注意：第一个和第四个为（main栈）
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608804444979-878bec72-1733-4652-8e49-31670cd6b0f4.png#align=left&display=inline&height=253&margin=%5Bobject%20Object%5D&originHeight=253&originWidth=416&size=0&status=done&style=none&width=416)
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608804451796-5a2adf25-7f5b-41e2-a284-c50edf92dbfb.png#align=left&display=inline&height=251&margin=%5Bobject%20Object%5D&originHeight=251&originWidth=701&size=0&status=done&style=none&width=701)
+![](http://cdn.jdfrozen.cn/1608804444979-878bec72-1733-4652-8e49-31670cd6b0f4.png)
+![](http://cdn.jdfrozen.cn/1608804451796-5a2adf25-7f5b-41e2-a284-c50edf92dbfb.png)
 b实例创建以此类推
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608804620005-a5bdeeb1-5ec6-49a0-917d-739fff84cb85.png#align=left&display=inline&height=253&margin=%5Bobject%20Object%5D&originHeight=253&originWidth=416&size=0&status=done&style=none&width=416)
-![](https://cdn.nlark.com/yuque/0/2020/png/257847/1608804626590-36dff4e3-7b49-4602-9b05-b5a301f7da43.png#align=left&display=inline&height=251&margin=%5Bobject%20Object%5D&originHeight=251&originWidth=701&size=0&status=done&style=none&width=701)
+![](http://cdn.jdfrozen.cn/1608804620005-a5bdeeb1-5ec6-49a0-917d-739fff84cb85.png)
+![](http://cdn.jdfrozen.cn/1608804626590-36dff4e3-7b49-4602-9b05-b5a301f7da43.png)
 #### 实例方法调用：
 aload_1：将局部变量表位置1(a)压入操作数栈
 aload_2：将局部变量表位置b(b)压入操作数栈
