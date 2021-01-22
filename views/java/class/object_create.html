@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>method_call</title>
+      <title>object_create</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -259,10 +259,10 @@ pre[data-line] .line-highlight[data-end]:after {
 
       </style>
     <!-- css -->
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="../../css/pace.css">
-    <link rel="stylesheet" href="../../css/custom.css">
+    <link rel="stylesheet" href="../../../css/pace.css">
+    <link rel="stylesheet" href="../../../css/custom.css">
 </head>
 <body for="html-export">
 <div class="container">
@@ -270,7 +270,7 @@ pre[data-line] .line-highlight[data-end]:after {
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="logo">
-                    <h1><a href="../../index.html"> Frozen</a></h1>
+                    <h1><a href="../../../index.html"> Frozen</a></h1>
                 </div>
             </div><!-- col-md-4 -->
             <div class="col-md-8 col-sm-7 col-xs-4">
@@ -283,10 +283,10 @@ pre[data-line] .line-highlight[data-end]:after {
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="cl-effect-11"><a href="../../index.html" data-hover="首页">首页</a></li>
-                            <li class="cl-effect-11"><a href="../../full-width.html" data-hover="博客">博客</a></li>
-                            <li class="cl-effect-11"><a href="../../engineer.html" data-hover="工程师">工程师</a></li>
-                            <li class="cl-effect-11"><a href="../../about.html" data-hover="关于">关于</a></li>
+                            <li class="cl-effect-11"><a href="../../../index.html" data-hover="首页">首页</a></li>
+                            <li class="cl-effect-11"><a href="../../../full-width.html" data-hover="博客">博客</a></li>
+                            <li class="cl-effect-11"><a href="../../../engineer.html" data-hover="工程师">工程师</a></li>
+                            <li class="cl-effect-11"><a href="../../../about.html" data-hover="关于">关于</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -304,63 +304,69 @@ pre[data-line] .line-highlight[data-end]:after {
     </header>
 </div>
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8">&#x5B57;&#x8282;&#x7801;&#x2014;&#x65B9;&#x6CD5;&#x8C03;&#x7528;</h1>
+      <h1 class="mume-header" id="%E5%AD%97%E8%8A%82%E7%A0%81%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA">&#x5B57;&#x8282;&#x7801;&#x2014;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;</h1>
 
-<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token function">calc</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Point</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Point</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Point</span> b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Point</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> c <span class="token operator">=</span> a<span class="token punctuation">.</span><span class="token function">area</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Point</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
+    <span class="token class-name">Point</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> x<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> y<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">area</span><span class="token punctuation">(</span><span class="token class-name">Point</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> length <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>y <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> width <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>x <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> length <span class="token operator">*</span> width<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </pre><pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name"><span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span></span>String</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   descriptor<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token class-name">Ljava</span><span class="token operator">/</span>lang<span class="token operator">/</span><span class="token class-name">String</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token class-name">V</span>
   flags<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token number">0x0009</span><span class="token punctuation">)</span> ACC_PUBLIC<span class="token punctuation">,</span> ACC_STATIC
   <span class="token class-name">Code</span><span class="token operator">:</span>
-    stack<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> locals<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> args_size<span class="token operator">=</span><span class="token number">1</span>
-       <span class="token number">0</span><span class="token operator">:</span> iconst_1
-       <span class="token number">1</span><span class="token operator">:</span> istore_1
-       <span class="token number">2</span><span class="token operator">:</span> iconst_2
-       <span class="token number">3</span><span class="token operator">:</span> istore_2
-       <span class="token number">4</span><span class="token operator">:</span> iload_1
-       <span class="token number">5</span><span class="token operator">:</span> iload_2
-       <span class="token number">6</span><span class="token operator">:</span> invokestatic  #<span class="token number">2</span>         <span class="token comment">// Method calc:(II)I</span>
-       <span class="token number">9</span><span class="token operator">:</span> istore_3
-      <span class="token number">10</span><span class="token operator">:</span> <span class="token keyword">return</span>
-<span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  descriptor<span class="token operator">:</span> <span class="token punctuation">(</span>II<span class="token punctuation">)</span><span class="token class-name">I</span>
-  flags<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token number">0x0008</span><span class="token punctuation">)</span> ACC_STATIC
-  <span class="token class-name">Code</span><span class="token operator">:</span>
-    stack<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">,</span> locals<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> args_size<span class="token operator">=</span><span class="token number">2</span>
-       <span class="token number">0</span><span class="token operator">:</span> iload_0
-       <span class="token number">1</span><span class="token operator">:</span> i2d
-       <span class="token number">2</span><span class="token operator">:</span> ldc2_w        #<span class="token number">3</span>         <span class="token comment">// double 2.0d</span>
-       <span class="token number">5</span><span class="token operator">:</span> invokestatic  #<span class="token number">5</span>         <span class="token comment">// Method java/lang/Math.pow:(DD)D</span>
-       <span class="token number">8</span><span class="token operator">:</span> iload_1
-       <span class="token number">9</span><span class="token operator">:</span> i2d
-      <span class="token number">10</span><span class="token operator">:</span> ldc2_w        #<span class="token number">3</span>         <span class="token comment">// double 2.0d</span>
-      <span class="token number">13</span><span class="token operator">:</span> invokestatic  #<span class="token number">5</span>         <span class="token comment">// Method java/lang/Math.pow:(DD)D</span>
-      <span class="token number">16</span><span class="token operator">:</span> dadd
-      <span class="token number">17</span><span class="token operator">:</span> invokestatic  #<span class="token number">6</span>         <span class="token comment">// Method java/lang/Math.sqrt:(D)D</span>
-      <span class="token number">20</span><span class="token operator">:</span> d2i
-      <span class="token number">21</span><span class="token operator">:</span> ireturn
-</pre><h4 class="mume-header" id="main%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8">main&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF1A;</h4>
+    stack<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> locals<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> args_size<span class="token operator">=</span><span class="token number">1</span>
+       <span class="token number">0</span><span class="token operator">:</span> <span class="token keyword">new</span>           #<span class="token number">2</span>       <span class="token comment">// class test/Point</span>
+       <span class="token number">3</span><span class="token operator">:</span> dup
+       <span class="token number">4</span><span class="token operator">:</span> iconst_1
+       <span class="token number">5</span><span class="token operator">:</span> iconst_1
+       <span class="token number">6</span><span class="token operator">:</span> invokespecial #<span class="token number">3</span>       <span class="token comment">// Method test/Point.&quot;&amp;lt;init&amp;gt;&quot;:(II)V</span>
+       <span class="token number">9</span><span class="token operator">:</span> astore_1
+      <span class="token number">10</span><span class="token operator">:</span> <span class="token keyword">new</span>           #<span class="token number">2</span>       <span class="token comment">// class test/Point</span>
+      <span class="token number">13</span><span class="token operator">:</span> dup
+      <span class="token number">14</span><span class="token operator">:</span> iconst_5
+      <span class="token number">15</span><span class="token operator">:</span> iconst_3
+      <span class="token number">16</span><span class="token operator">:</span> invokespecial #<span class="token number">3</span>       <span class="token comment">// Method test/Point.&quot;&amp;lt;init&amp;gt;&quot;:(II)V</span>
+      <span class="token number">19</span><span class="token operator">:</span> astore_2
+      <span class="token number">20</span><span class="token operator">:</span> aload_1
+      <span class="token number">21</span><span class="token operator">:</span> aload_2
+      <span class="token number">22</span><span class="token operator">:</span> invokevirtual #<span class="token number">4</span>       <span class="token comment">// Method test/Point.area:(Ltest/Point;)I</span>
+      <span class="token number">25</span><span class="token operator">:</span> istore_3
+      <span class="token number">26</span><span class="token operator">:</span> <span class="token keyword">return</span>
+</pre><h4 class="mume-header" id="%E8%AF%A6%E8%A7%A3">&#x8BE6;&#x89E3;</h4>
 
-<p>**&#x53C2;&#x6570;&#xFF1A; **&#x6240;&#x6709;&#x53C2;&#x6570;&#x4EE5;&#x6B63;&#x786E;&#x7684;&#x987A;&#x5E8F;&#x63A8;&#x5165;&#x64CD;&#x4F5C;&#x6570;&#x5806;&#x6808;&#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x51C6;&#x5907;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x3002;<br>
-<strong><code>invokestatic</code>&#xFF08;&#x6216;&#x7C7B;&#x4F3C;&#x7684;&#x8C03;&#x7528;&#x6307;&#x4EE4;&#xFF0C;&#x5982;&#x540E;&#x6240;&#x8FF0;&#xFF09;&#xFF0C;&#x5F39;&#x51FA;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E3A;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x6846;&#x67B6;&#xFF0C;&#x5176;&#x4E2D;&#x5C06;&#x53C2;&#x6570;&#x653E;&#x7F6E;&#x5728;&#x5176;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x6570;&#x7EC4;&#x4E2D;&#x3002;</strong><br>
-<strong><code>invokestatic&#x8BE6;&#x89E3;&#xFF1A;</code></strong><br>
-invokestatic&#x901A;&#x8FC7;&#x67E5;&#x770B;&#x5730;&#x5740;&#xFF08;&#x4ECE;6&#x8DF3;&#x5230;9&#xFF09;&#xFF0C;&#x8BE5;&#x6307;&#x4EE4;&#x5360;&#x7528;&#x4E86;3&#x4E2A;&#x5B57;&#x8282;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#xFF0C;&#x4E0E;&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x6240;&#x770B;&#x5230;&#x7684;&#x6240;&#x6709;&#x6307;&#x4EE4;&#x4E0D;&#x540C;&#xFF0C;&#x8BE5;&#x6307;&#x4EE4;invokestatic&#x5305;&#x62EC;&#x4E24;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x5B57;&#x8282;&#x6765;&#x6784;&#x9020;&#x5BF9;&#x8981;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5F15;&#x7528;&#xFF08;&#x6B64;&#x5916;&#x5230;&#x64CD;&#x4F5C;&#x7801;&#xFF09;&#x3002;javap&#x5C06;&#x5F15;&#x7528;&#x663E;&#x793A;&#x4E3A;#2&#xFF0C;&#x8FD9;&#x662F;&#x5BF9;&#x8BE5;calc&#x65B9;&#x6CD5;&#x7684;&#x7B26;&#x53F7;&#x5F15;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x524D;&#x9762;&#x63CF;&#x8FF0;&#x7684;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x89E3;&#x6790;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;</p>
-<h4 class="mume-header" id="calc%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8">calc&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF1A;</h4>
+<p>new&#xFF1A;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x540E;&#xFF0C;&#x4FDD;&#x7559;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#xFF0C;&#xFF08;main&#x6808;&#xFF09;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A; point<br>
+dup&#xFF1A;&#x8D4B;&#x503C;&#x5F15;&#x7528;&#x540E;&#xFF0C;&#x4FDD;&#x7559;&#x4E24;&#x4E2A;&#x5F15;&#x7528;&#xFF0C;&#xFF08;main&#x6808;&#xFF09;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A; point,point<br>
+iconst_1&#xFF1A;&#x538B;&#x5165;&#x5E38;&#x91CF;1&#x5165;&#xFF08;main&#x6808;&#xFF09;<br>
+iconst_1&#xFF1A;&#x538B;&#x5165;&#x5E38;&#x91CF;1&#x5165;&#xFF08;main&#x6808;&#xFF09;<br>
+invokespecial&#xFF1A; &#x8C03;&#x7528;&#x4E86;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7528;&#x4E00;&#x4E2A;&#x5F15;&#x7528;point&#x548C;1&#xFF0C;1&#xFF0C;&#xFF08;main&#x6808;&#xFF09;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A; point<br>
+astore_1&#xFF1A;&#x5F39;&#x51FA;point&#xFF0C;&#x653E;&#x5165;&#x672C;&#x5730;&#x53D8;&#x91CF;a1<br>
+&#x6CE8;&#x610F;&#xFF1A;&#x7B2C;&#x4E00;&#x4E2A;&#x548C;&#x7B2C;&#x56DB;&#x4E2A;&#x4E3A;&#xFF08;main&#x6808;&#xFF09;<br>
+<img src="http://cdn.jdfrozen.cn/1608804444979-878bec72-1733-4652-8e49-31670cd6b0f4.png" alt><br>
+<img src="http://cdn.jdfrozen.cn/1608804451796-5a2adf25-7f5b-41e2-a284-c50edf92dbfb.png" alt><br>
+b&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;<br>
+<img src="http://cdn.jdfrozen.cn/1608804620005-a5bdeeb1-5ec6-49a0-917d-739fff84cb85.png" alt><br>
+<img src="http://cdn.jdfrozen.cn/1608804626590-36dff4e3-7b49-4602-9b05-b5a301f7da43.png" alt></p>
+<h4 class="mume-header" id="%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8">&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF1A;</h4>
 
-<p>iload_0&#xFF1A;&#x5C06;&#x7B2C;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x53C2;&#x6570;&#x52A0;&#x8F7D;&#x5230;&#x64CD;&#x4F5C;&#x6570;&#x5806;&#x6808;&#x3002;<br>
-i2d&#xFF1A;&#x5E94;&#x7528;&#x52A0;&#x5BBD;&#x8F6C;&#x6362;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x4E3A;&#x53CC;&#x7CBE;&#x5EA6;&#xFF0C;&#x6240;&#x5F97;&#x7684;double&#x66FF;&#x6362;&#x64CD;&#x4F5C;&#x6570;&#x5806;&#x6808;&#x7684;&#x9876;&#x90E8;&#x3002;<br>
-ldc2_w&#xFF1A;&#x6307;&#x4EE4;&#x5C06;&#x53CC;&#x7CBE;&#x5EA6;&#x5E38;&#x91CF;<code>2.0d</code>&#xA0; &#xFF08;&#x4ECE;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x53D6;&#x51FA;&#xFF09;&#x538B;&#x5165;&#x64CD;&#x4F5C;&#x6570;&#x5806;&#x6808;&#x3002;<br>
-invokestatic &#xA0;#5&#xFF1A;&#x4F7F;&#x7528;&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x5DF2;&#x51C6;&#x5907;&#x597D;&#x7684;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x503C;&#xFF08;to&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;<code>calc</code> &#x548C;constant <code>2.0d</code>&#xFF09;&#x8C03;&#x7528;static&#x65B9;&#x6CD5;&#x3002;&#x5F53;<code>Math.pow</code>&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x65F6;&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x5C06;&#x88AB;&#x5B58;&#x50A8;&#x5728;&#x5176;&#x8C03;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x6570;&#x5806;&#x6808;&#x4E0A;&#x3002;<br>
-&#x4E0B;&#x4E00;&#x6761;&#x6307;&#x4EE4; <code>dadd</code>&#x5F39;&#x51FA;&#x9876;&#x90E8;&#x7684;&#x4E24;&#x4E2A;&#x4E2D;&#x95F4;&#x7ED3;&#x679C;&#xFF0C;&#x5C06;&#x5B83;&#x4EEC;&#x76F8;&#x52A0;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x603B;&#x548C;&#x63A8;&#x56DE;&#x9876;&#x90E8;&#x3002;&#x6700;&#x540E;invokestatic<code>Math.sqrt</code>&#x5BF9;&#x7ED3;&#x679C;&#x603B;&#x548C;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x7F29;&#x5C0F;&#x8F6C;&#x6362;&#xFF08;<code>d2i</code>&#xFF09;&#x5C06;&#x7ED3;&#x679C;&#x4ECE;double&#x8F6C;&#x6362;&#x4E3A;int&#xA0;&#x3002;&#x751F;&#x6210;&#x7684;int&#x8FD4;&#x56DE;&#x5230;main&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x5C06;&#x5176;&#x5B58;&#x50A8;&#x56DE;<code>c</code>&#xFF08;<code>istore_3</code>&#xFF09;&#x3002;</p>
-<h4 class="mume-header" id="%E5%9B%BE%E8%A7%A3%E6%B5%81%E7%A8%8B">&#x56FE;&#x89E3;&#x6D41;&#x7A0B;&#xFF1A;</h4>
-
-<p><img src="http://cdn.jdfrozen.cn/1608801991774-95632816-2fa8-4632-93dc-e98a5eb95a41.png" alt><img src="http://cdn.jdfrozen.cn/1608801997831-fda0fe1e-2831-4393-80f9-4e34560a77ad.png" alt></p>
+<p>aload_1&#xFF1A;&#x5C06;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x8868;&#x4F4D;&#x7F6E;1(a)&#x538B;&#x5165;&#x64CD;&#x4F5C;&#x6570;&#x6808;<br>
+aload_2&#xFF1A;&#x5C06;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x8868;&#x4F4D;&#x7F6E;b(b)&#x538B;&#x5165;&#x64CD;&#x4F5C;&#x6570;&#x6808;<br>
+invokevirtual&#xFF1A;&#x8C03;&#x7528;<code>area</code>&#x65B9;&#x6CD5;<code>invokevirtual</code><br>
+istore_3&#xFF1A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x653E;&#x5165;&#x672C;&#x5730;&#x53D8;&#x91CF;c3</p>
 
       </div>
 
