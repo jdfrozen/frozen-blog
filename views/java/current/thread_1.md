@@ -2,7 +2,7 @@
 
 Java 语言里的线程本质上就是操作系统的线程，它们是一一对应的
 通用的线程生命周期：
-![](https://cdn.nlark.com/yuque/0/2019/png/257847/1576418890601-80a7e1b0-8ee2-4fea-950f-095e1fb502e4.png#align=left&display=inline&height=327&originHeight=714&originWidth=1142&size=0&status=done&style=none&width=523)
+![](http://cdn.jdfrozen.cn/1576418890601-80a7e1b0-8ee2-4fea-950f-095e1fb502e4.png)
 Java 中线程的生命周期：
 1、NEW（初始化状态）
 2、RUNNABLE（可运行 / 运行状态）
@@ -11,7 +11,7 @@ Java 中线程的生命周期：
 5、TIMED_WAITING（有时限等待）
 6、TERMINATED（终止状态）
 BLOCKED、WAITING、TIMED_WAITING **只要 Java 线程处于这三种状态之一，那么这个线程就永远没有 CPU 的使用权**
-**    ![](https://cdn.nlark.com/yuque/0/2019/png/257847/1576419041449-8e2849ea-08c0-443c-9a5b-8273e2a9194f.png#align=left&display=inline&height=310&originHeight=714&originWidth=1142&size=0&status=done&style=none&width=496)
+**    ![](http://cdn.jdfrozen.cn/1576419041449-8e2849ea-08c0-443c-9a5b-8273e2a9194f.png)
 1. RUNNABLE 与 BLOCKED 的状态转换
 线程等待 synchronized 的隐式锁
 2. RUNNABLE 与 WAITING 的状态转换

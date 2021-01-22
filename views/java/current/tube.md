@@ -10,8 +10,9 @@ MESA 模型：
 另一个是同步
 管程解决互斥问题的思路很简单，就是将共享变量及其对共享变量的操作统一封装起来：
 每个条件变量都对应有一个等待队列
-![](https://cdn.nlark.com/yuque/0/2019/png/257847/1576407634827-a7071953-d930-4210-ba40-b38becce9419.png#align=left&display=inline&height=308&originHeight=714&originWidth=1142&size=0&status=done&style=none&width=492)![](https://cdn.nlark.com/yuque/0/2019/png/257847/1576407663841-f2da6b0d-f376-4daa-b5d4-036c74fa3eb4.png#align=left&display=inline&height=316&originHeight=765&originWidth=1142&size=0&status=done&style=none&width=471)
+![](http://cdn.jdfrozen.cn/1576407634827-a7071953-d930-4210-ba40-b38becce9419.png)![](https://cdn.nlark.com/yuque/0/2019/png/257847/1576407663841-f2da6b0d-f376-4daa-b5d4-036c74fa3eb4.png#align=left&display=inline&height=316&originHeight=765&originWidth=1142&size=0&status=done&style=none&width=471)
 MESA 模型编程范式：
+
 ```
 while(条件不满足) {
   wait();
@@ -26,7 +27,7 @@ MESA 管程：
 T2 通知完 T1 后，T2 还是会接着执行，T1 并不立即执行，仅仅是从条件变量的等待队列进到入口等待队列里面。就是当 T1 再次执行的时候，可能曾经满足的条件，现在已经不满足了，所以需要以循环方式检验判断条件（判断条件绑定到添加变量上）
 Java管程：
 语言级别管程（synchronized，wait()、notify()、notifyAll() ，条件变量能是一个对象），wait()绑定条件变量的等待队列即阻塞队列
-![](https://cdn.nlark.com/yuque/0/2019/png/257847/1576417214324-dbf634a9-1fb6-44b7-94b5-f02670ed3ced.png#align=left&display=inline&height=267&originHeight=714&originWidth=1142&size=0&status=done&style=none&width=428)
+![](http://cdn.jdfrozen.cn/1576417214324-dbf634a9-1fb6-44b7-94b5-f02670ed3ced.png)
 JDK并发包里的 Lock 和 Condition（可以多个）
 ```shell
 public class BlockedQueue<T>{

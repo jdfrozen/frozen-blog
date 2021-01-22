@@ -9,7 +9,7 @@
 4、当患者做完检查后，拿检测报告重新分诊，等待叫号；
 5、当大夫再次叫到自己的号时，患者再去找大夫就诊
 **这个等待队列和互斥锁是一对一的关系，每个互斥锁都有自己独立的等待队列。**
-**![](https://cdn.nlark.com/yuque/0/2019/png/257847/1576405592340-578bc3cd-d7e4-4f0c-a900-4ecbc714c078.png#align=left&display=inline&height=330&margin=%5Bobject%20Object%5D&originHeight=720&originWidth=1142&size=0&status=done&style=none&width=523)
+**![](http://cdn.jdfrozen.cn/1576405592340-578bc3cd-d7e4-4f0c-a900-4ecbc714c078.png)
 ait()、notify()、notifyAll()（**尽量用它**） 方法操作的等待队列是互斥锁的等待队列；
 synchronized 锁定的是 this，那么对应的一定是 this.wait()、this.notify()、this.notifyAll()；
 synchronized 锁定的是 target，那么对应的一定是 target.wait()、target.notify()、target.notifyAll() 
